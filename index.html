@@ -12,7 +12,7 @@ body {
     color: #fff; 
     background: #0a1f1a; 
 }
-#home-section { display: block; }
+#home-section { display: flex; flex-direction: column; min-height: 100vh; }
 #about-section { display: none; }
 #contact-section { display: none; }
 
@@ -22,7 +22,7 @@ body {
 .nav-links a { color: #D4A017; text-decoration: none; margin-left: 40px; font-size: 0.9rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; cursor: pointer; }
 .nav-links a:hover { color: #fff; }
 
-.hero { position: relative; height: 100vh; min-height: 600px; background: url('https://img1.wsimg.com/isteam/getty/2220243310/:/rs=w:2558,m') center/cover no-repeat; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+.hero { position: relative; flex: 1; min-height: 600px; background: url('https://img1.wsimg.com/isteam/getty/2220243310/:/rs=w:2558,m') center/cover no-repeat; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
 .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,40,30,0.45); }
 .hero-inner { position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; }
 .hero-logo { height: 220px; width: auto; display: block; margin-bottom: 30px; filter: drop-shadow(0 6px 25px rgba(0,0,0,0.5)); }
@@ -137,7 +137,14 @@ footer { background: #000; color: #666; text-align: center; padding: 30px; font-
             <a onclick="goTo('home')" style="color:#D4A017;font-weight:400;letter-spacing:0.5px;text-transform:uppercase;cursor:pointer;margin-left:20px;text-decoration:none;">Home</a>
             <a onclick="goTo('about')" style="color:#fff;font-weight:400;letter-spacing:0.5px;text-transform:uppercase;cursor:pointer;margin-left:20px;text-decoration:none;">About Us</a>
             <a onclick="goTo('contact')" style="color:#fff;font-weight:400;letter-spacing:0.5px;text-transform:uppercase;cursor:pointer;margin-left:20px;text-decoration:none;">Contact</a>
-        </div>
+            </div>
+    <div class="contact-section">
+        <h2><a onclick="goTo('contact')">Contact Us !</a></h2>
+    </div>
+</div>
+
+<div id="about-section">
+
    <div class="hero-inner">
     <img src="ycln_logo.png" alt="Young Community Lawyers Network" class="hero-logo">
     <h1>Young Community Lawyers Network</h1>
