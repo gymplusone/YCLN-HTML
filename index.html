@@ -25,9 +25,9 @@ body {
 .hero { position: relative; flex: 1; min-height: 600px; background: url('https://img1.wsimg.com/isteam/getty/2220243310/:/rs=w:2558,m') center/cover no-repeat; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
 .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,40,30,0.45); }
 .hero-inner { position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; }
-.hero-logo { height: 280px; width: auto; display: block; margin-bottom: 30px; filter: drop-shadow(0 6px 25px rgba(0,0,0,0.5)); }
-.hero h1 { font-size: 1.1rem; font-weight: 600; letter-spacing: 5px; text-transform: uppercase; margin-bottom: 25px; }
-.hero h2 { font-family: 'Playfair Display', Georgia, serif; font-size: 4rem; font-weight: 400; font-style: italic; line-height: 1.2; }
+.hero-logo { height: 280px; width: auto; display: block; margin-bottom: 10px; filter: drop-shadow(0 6px 25px rgba(0,0,0,0.5)); }
+.hero h1 { font-size: 1.1rem; font-weight: 600; letter-spacing: 5px; text-transform: uppercase; margin-bottom: 10px; }
+.hero h2 { font-family: 'Playfair Display', Georgia, serif; font-size: 4rem; font-weight: 400; font-style: italic; line-height: 1.2; margin-bottom: 0; }
 .hero-buttons {
     display: flex;
     gap: 25px;
@@ -61,11 +61,6 @@ body {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(212,160,23,0.5);
 }
-
-.contact-section { background: #000; padding: 15px 20px; text-align: center; }
-.contact-section h2 { font-family: 'Playfair Display', Georgia, serif; font-size: 1.8rem; font-weight: 400; margin-bottom: 8px; }
-.contact-section p { font-size: 1rem; color: #aaa; font-style: italic; }
-.contact-section a { color: #D4A017; text-decoration: none; cursor: pointer; }
 
 .about-hero { position: relative; height: 30vh; min-height: 220px; background: url('about_banner.JPG') center/cover no-repeat; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; text-align: center; padding-top: 90px; padding-bottom: 30px; }
 .about-hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.4) 40%, rgba(0,0,0,0.1) 100%); z-index: 1; }
@@ -107,7 +102,7 @@ footer { background: #000; color: #666; text-align: center; padding: 10px; font-
     .nav-home, .nav-page { padding: 10px 15px; }
     .nav-links a { margin-left: 8px; font-size: 0.7rem; letter-spacing: 0.6px; }
     .nav-logo { height: 55px; margin-bottom: -15px; }
-    .hero-logo { height: 160px; }
+    .hero-logo { height: 200px; }
     .hero h2 { font-size: 2.5rem; }
     .hero h1 { font-size: 0.85rem; letter-spacing: 3px; }
     .about-hero h1, .contact-hero h1 { font-size: 2rem; }
@@ -122,7 +117,7 @@ footer { background: #000; color: #666; text-align: center; padding: 10px; font-
     .nav-home, .nav-page { padding: 12px 15px; }
     .nav-links a { margin-left: 10px; font-size: 0.6rem; letter-spacing: 0.5px; }
     .nav-logo { height: 45px; margin-bottom: -10px; }
-    .hero-logo { height: 130px; }
+    .hero-logo { height: 160px; }
     .hero h2 { font-size: 2rem; }
     .hero h1 { font-size: 0.75rem; letter-spacing: 2px; }
     .about-content { padding: 30px 15px; }
@@ -134,8 +129,7 @@ footer { background: #000; color: #666; text-align: center; padding: 10px; font-
 </style>
 </head>
 <body>
- </div>
-     </div>
+
 <div id="home-section">
     <div class="hero">
         <div class="nav-home">
@@ -154,7 +148,8 @@ footer { background: #000; color: #666; text-align: center; padding: 10px; font-
             </div>
         </div>
     </div>
- 
+</div>
+
 <div id="about-section">
     <div class="nav-page">
         <img src="ycln_logo.png" alt="YCLN" class="nav-logo" onclick="goTo('home')">
