@@ -40,7 +40,8 @@ body {
     color: #fff; 
     background: #0a1f1a; 
 }
-#home-section { display: block; }
+#home-section { display: flex; flex-direction: column; min-height: 100vh; }
+
 #about-section { display: none; }
 #contact-section { display: none; }
 
@@ -50,7 +51,7 @@ body {
 .nav-links a { color: #D4A017; text-decoration: none; margin-left: 40px; font-size: 0.9rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; cursor: pointer; }
 .nav-links a:hover { color: #fff; }
 
-.hero { position: relative; height: 100vh; min-height: 600px; background: url('https://img1.wsimg.com/isteam/getty/2220243310/:/rs=w:2558,m') center/cover no-repeat; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+.hero { position: relative; flex: 1; min-height: 600px; background: url('https://img1.wsimg.com/isteam/getty/2220243310/:/rs=w:2558,m') center/cover no-repeat; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
 .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,40,30,0.45); }
 .hero-inner { position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; }
 .hero-logo { height: 220px; width: auto; display: block; margin-bottom: 30px; filter: drop-shadow(0 6px 25px rgba(0,0,0,0.5)); }
@@ -129,7 +130,7 @@ textarea { min-height: 150px; resize: vertical; }
 button { background: #D4A017; color: #000; padding: 16px 40px; border: none; font-size: 1rem; font-weight: 700; cursor: pointer; text-transform: uppercase; letter-spacing: 2px; display: block; margin: 40px auto 0; }
 button:hover { background: #b88a14; }
 
-footer { background: #000; color: #666; text-align: center; padding: 30px; font-size: 0.85rem; }
+footer { background: #000; color: #666; text-align: center; padding: 30px; font-size: 0.85rem; position: relative; z-index: 10 }
 
 @media(max-width:768px) {
     .nav-home, .nav-page { padding: 10px 15px; }
