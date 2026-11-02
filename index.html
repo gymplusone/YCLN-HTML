@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<link rel="icon" type="image/png" href="favicon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>YCLN - Young Community Leaders Network</title>
 <meta name="description" content="YCLN is a youth-led network equipping 18 to 25 year olds, including NEET young people, with skills, networks and coaching across law, finance, technology, property and beyond. Home of the RegenAct reverse mentoring programme.">
@@ -22,6 +23,8 @@ img{max-width:100%}
 section{padding:88px 0}
 .kicker{display:inline-block;font-size:12px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;margin-bottom:14px}
 .lead{font-size:19px;max-width:660px}
+.center{text-align:center}
+.center .lead{margin-left:auto;margin-right:auto}
 
 /* header */
 header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
@@ -37,13 +40,16 @@ header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdro
 .btn-navy:hover{background:var(--deep)}
 .btn-ghost{border:2px solid #fff;color:#fff}
 .btn-ghost:hover{background:#fff;color:var(--deep)}
+.btn-ghost-navy{border:2px solid var(--navy);color:var(--navy)}
+.btn-ghost-navy:hover{background:var(--navy);color:#fff}
 @media(max-width:900px){.navlinks a:not(.btn){display:none}}
 
 /* hero */
 .hero{background:var(--deep) url('https://images.pexels.com/photos/9034278/pexels-photo-9034278.jpeg?auto=compress&cs=tinysrgb&w=2000') center/cover no-repeat;color:#fff;position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.12) 1.6px,transparent 1.7px);background-size:26px 26px;mask-image:linear-gradient(120deg,rgba(0,0,0,.9),rgba(0,0,0,.12));pointer-events:none}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,rgba(20,26,60,.72),rgba(20,26,60,.30));pointer-events:none}
-.hero .wrap{position:relative;z-index:2;padding-top:110px;padding-bottom:100px;text-align:center}
+.hero .wrap{position:relative;z-index:2}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.12) 1.6px,transparent 1.7px);background-size:26px 26px;mask-image:linear-gradient(120deg,rgba(0,0,0,.9),rgba(0,0,0,.12));pointer-events:none}
+.hero .wrap{position:relative;padding-top:110px;padding-bottom:100px;text-align:center}
 .hero .badge{display:inline-block;background:#fff;padding:22px 46px;border-radius:14px;margin-bottom:30px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
 .hero .badge img{display:block;height:96px;width:auto;margin:0 auto}
 .hero h1{font-size:clamp(26px,4vw,40px);font-weight:700;letter-spacing:0.04em}
@@ -63,12 +69,12 @@ header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdro
 #industries .kicker{color:var(--purple)}
 #industries h2{color:var(--navy);font-size:clamp(28px,3.6vw,40px)}
 .icards{display:flex;flex-wrap:wrap;margin:52px -12px 0}
-.icard{flex:1 1 240px;min-width:230px;margin:0 12px 24px;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:30px 26px;position:relative;transition:.2s;text-align:center}
+.icard{flex:1 1 240px;min-width:230px;margin:0 12px 24px;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:30px 26px;position:relative;transition:.2s}
 .icard:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(20,26,60,.10)}
 .icard::before{content:"";position:absolute;top:0;left:26px;right:26px;height:5px;border-radius:0 0 5px 5px;background:var(--ac)}
-.icard .dot{width:44px;height:44px;border-radius:50%;background:var(--ac);margin:0 auto 16px}
+.icard .dot{width:44px;height:44px;border-radius:50%;background:var(--ac);margin-bottom:16px}
 .icard h3{color:var(--navy);font-size:20px;margin-bottom:8px}
-.icard p{color:var(--slate);font-size:14.5px;margin:0 auto 16px}
+.icard p{color:var(--slate);font-size:14.5px;margin-bottom:16px}
 .icard a{color:var(--navy);font-weight:700;font-size:14px;text-decoration:none;border-bottom:2px solid var(--ac)}
 .icard a:hover{color:var(--purple)}
 
@@ -77,14 +83,14 @@ header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdro
 #programmes .kicker{color:var(--teal)}
 #programmes h2{color:var(--navy);font-size:clamp(28px,3.6vw,40px)}
 .pcards{display:flex;flex-wrap:wrap;margin:52px -14px 0}
-.pcard{flex:1 1 280px;min-width:260px;margin:0 14px 26px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:36px 30px;position:relative;text-align:center}
+.pcard{flex:1 1 280px;min-width:260px;margin:0 14px 26px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:36px 30px;position:relative}
 .pcard::before{content:"";position:absolute;top:0;left:30px;right:30px;height:5px;border-radius:0 0 5px 5px;background:var(--teal)}
 .pcard.c2::before{background:var(--coral)}
 .pcard.c3::before{background:var(--gold)}
 .pcard h3{color:var(--navy);font-size:21px;margin-bottom:12px}
-.pcard p{color:var(--slate);font-size:15px;margin:0 auto}
+.pcard p{color:var(--slate);font-size:15px}
 .opt{display:inline-block;margin-top:18px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
-.note{margin-top:34px;padding:24px 28px;border:1.5px dashed #C8BFAE;border-radius:10px;color:var(--slate);font-size:15px;background:#FDFCFA;text-align:center}
+.note{margin-top:34px;padding:24px 28px;border:1.5px dashed #C8BFAE;border-radius:10px;color:var(--slate);font-size:15px;background:#FDFCFA}
 
 /* regenact */
 #regenact{background:var(--deep);color:#fff}
@@ -96,14 +102,14 @@ header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdro
 .fact b{display:block;font-size:30px;color:var(--gold)}
 .fact span{font-size:13.5px;color:#C9D3DE}
 .phases{display:flex;flex-wrap:wrap;margin:44px -9px 0}
-.phase{flex:1 1 200px;min-width:190px;margin:0 9px 18px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:24px;text-align:center}
+.phase{flex:1 1 200px;min-width:190px;margin:0 9px 18px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:24px}
 .phase .w{font-size:11px;font-weight:700;letter-spacing:.16em;color:var(--gold);text-transform:uppercase}
 .phase h3{font-family:'Playfair Display',serif;font-weight:700;font-size:19px;margin:8px 0}
 .phase p{color:#C9D3DE;font-size:14px}
-.comps{display:flex;flex-wrap:wrap;gap:10px;margin-top:38px;justify-content:center}
+.comps{display:flex;flex-wrap:wrap;gap:10px;margin-top:38px}
 .comps span{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);color:#E4EAF1;font-size:13.5px;font-weight:600;padding:8px 16px;border-radius:999px}
-.rcta{margin-top:46px;display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:center}
-.soc{margin-top:40px;padding-top:32px;border-top:1px solid rgba(255,255,255,.14);display:flex;flex-wrap:wrap;gap:40px;justify-content:center}
+.rcta{margin-top:46px;display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.soc{margin-top:40px;padding-top:32px;border-top:1px solid rgba(255,255,255,.14);display:flex;flex-wrap:wrap;gap:40px}
 .soc div b{display:block;font-size:26px;color:var(--gold)}
 .soc div span{color:#C9D3DE;font-size:13.5px}
 
@@ -112,7 +118,7 @@ header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdro
 #partners .kicker{color:var(--coral)}
 #partners h2{color:var(--navy);font-size:clamp(28px,3.6vw,40px)}
 .ptiles{display:flex;flex-wrap:wrap;margin:48px auto 0;max-width:1100px}
-.ptile{flex:1 1 200px;min-width:200px;margin:0 12px 22px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:30px 22px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;text-align:center}
+.ptile{flex:1 1 200px;min-width:200px;margin:0 12px 22px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:30px 22px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start}
 .ptile .t{font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--coral)}
 .ptile b{display:block;font-size:22px;color:var(--navy);margin-top:8px}
 .ptile p{color:var(--slate);font-size:14px;margin-top:6px}
@@ -121,35 +127,68 @@ header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdro
 #heritage{background:var(--paper)}
 #heritage .kicker{color:var(--green)}
 #heritage h2{color:var(--navy);font-size:clamp(26px,3.2vw,36px)}
-#heritage p{max-width:800px;color:var(--slate);font-size:17px;margin:18px auto 0;text-align:center}
+#heritage p{max-width:800px;color:var(--slate);font-size:17px;margin-top:18px}
 #heritage strong{color:var(--navy)}
 
 /* contact */
 #contact{background:var(--deep);color:#fff;text-align:center}
+#contact .lead{margin-left:auto;margin-right:auto}
 #contact .kicker{color:var(--teal)}
 #contact h2{color:#fff;font-size:clamp(28px,3.4vw,40px)}
-#contact .lead{color:#BECAD6;margin-left:auto;margin-right:auto}
+#contact .lead{color:#BECAD6}
 .cform{max-width:640px;margin:44px auto 0;text-align:left}
 .fg{margin-bottom:22px}
 .fg label{display:block;margin-bottom:8px;font-weight:600;color:var(--gold);font-size:.85rem;text-transform:uppercase;letter-spacing:1px}
 .fg input,.fg textarea{width:100%;padding:14px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.06);color:#fff;font-family:'Source Sans 3',sans-serif;font-size:1rem;border-radius:6px}
 .fg input:focus,.fg textarea:focus{outline:none;border-color:var(--gold)}
 .fg textarea{min-height:140px;resize:vertical}
-.cform button{background:var(--gold);color:var(--deep);padding:15px 40px;border:none;font-size:1rem;font-weight:700;cursor:pointer;text-transform:uppercase;letter-spacing:2px;border-radius:8px;display:block;margin:26px auto 0}
+.cform button{background:var(--gold);color:var(--deep);padding:15px 40px;border:none;font-size:1rem;font-weight:700;cursor:pointer;text-transform:uppercase;letter-spacing:2px;border-radius:8px}
 .cform button:hover{background:var(--gold-d)}
 
 footer{background:#0D1230;color:#8FA0B3;text-align:center;padding:34px 18px;font-size:14px}
 footer b{color:#fff}
 
-/* mobile menu */
+@media(max-width:640px){
+  section{padding:56px 0}
+  .wrap{padding:0 18px}
+  .nav{height:60px}
+  .brand img{height:32px}
+  .navlinks a.btn{margin-left:14px;padding:10px 16px;font-size:13px}
+  .hero .wrap{padding-top:74px;padding-bottom:64px}
+  .hero .badge{padding:14px 22px;margin-bottom:20px}
+  .hero .badge img{height:60px}
+  .hero h1{font-size:22px;letter-spacing:0.02em}
+  .hero h2{font-size:19px;margin-top:4px}
+  .hero p{font-size:15.5px;margin:16px auto 26px}
+  .strip div{padding:18px 10px;flex:1 1 45%;border-left:none;border-top:1px solid rgba(255,255,255,.14)}
+  .strip div:nth-child(-n+2){border-top:none}
+  .strip b{font-size:22px}
+  .icards{margin:36px -8px 0}
+  .icard{flex:1 1 100%;margin:0 8px 16px;padding:24px 20px}
+  .pcards{margin:36px -8px 0}
+  .pcard{flex:1 1 100%;margin:0 8px 18px;padding:26px 20px}
+  .facts{margin:30px -6px 0}
+  .fact{flex:1 1 44%;min-width:130px;margin:0 6px 12px;padding:16px 10px}
+  .fact b{font-size:22px}
+  .phases{margin:28px -6px 0}
+  .phase{flex:1 1 100%;margin:0 6px 12px;padding:18px}
+  .ptiles{margin:30px -8px 0}
+  .ptile{flex:1 1 100%;margin:0 8px 16px}
+  .rcta{margin-top:30px}
+  .soc{gap:22px;margin-top:28px}
+  .lead{font-size:16.5px}
+  .note{margin-top:22px;padding:18px}
+}
+
 .menu-btn{display:none;background:none;border:2px solid var(--navy);color:var(--navy);border-radius:8px;font-size:18px;padding:6px 12px;cursor:pointer}
 .mobile-menu{display:none;flex-direction:column;background:#fff;border-bottom:1px solid var(--line);padding:8px 0}
 .mobile-menu a{padding:13px 24px;color:var(--navy);font-weight:600;text-decoration:none;border-top:1px solid var(--line)}
 .mobile-menu a:hover{background:var(--paper);color:var(--purple)}
 .mobile-menu.open{display:flex}
-@media(max-width:900px){.menu-btn{display:block}}
+@media(max-width:900px){
+  .menu-btn{display:block}
+}
 
-/* modal */
 .modal{display:none;position:fixed;inset:0;background:rgba(17,17,17,.66);z-index:200;overflow-y:auto;padding:40px 16px}
 .modal-box{max-width:620px;margin:30px auto;background:#fff;border-radius:14px;padding:38px 36px;position:relative}
 .modal-box h3{color:var(--navy);font-size:24px;margin-bottom:4px}
@@ -167,38 +206,14 @@ footer b{color:#fff}
 #industries .kicker,#programmes .kicker,#regenact .kicker,#partners .kicker,#heritage .kicker{display:block;text-align:center;margin-left:auto;margin-right:auto}
 #industries h2,#programmes h2,#partners h2,#heritage h2{text-align:center}
 #industries .lead,#programmes .lead,#partners .lead,#regenact .lead{margin-left:auto;margin-right:auto;text-align:center}
-
-@media(max-width:640px){
-  section{padding:56px 0}
-  .wrap{padding:0 18px}
-  .nav{height:60px}
-  .brand img{height:32px}
-  .navlinks a.btn{margin-left:14px;padding:10px 16px;font-size:13px}
-  .hero .wrap{padding-top:74px;padding-bottom:64px}
-  .hero .badge{padding:14px 22px;margin-bottom:20px}
-  .hero .badge img{height:60px}
-  .hero h1{font-size:22px;letter-spacing:0.02em}
-  .hero h2{font-size:15px;margin-top:8px}
-  .hero p{font-size:15.5px;margin:16px auto 26px}
-  .strip div{padding:18px 10px;flex:1 1 45%;border-left:none;border-top:1px solid rgba(255,255,255,.14)}
-  .strip div:nth-child(-n+2){border-top:none}
-  .strip b{font-size:22px}
-  .icards{margin:36px -8px 0}
-  .icard{flex:1 1 100%;margin:0 8px 16px;padding:24px 20px}
-  .pcards{margin:36px -8px 0}
-  .pcard{flex:1 1 100%;margin:0 8px 18px;padding:26px 20px}
-  .facts{margin:30px -6px 0}
-  .fact{flex:1 1 44%;min-width:130px;margin:0 6px 12px;padding:16px 10px}
-  .fact b{font-size:22px}
-  .phases{margin:28px -6px 0}
-  .phase{flex:1 1 100%;margin:0 6px 12px;padding:18px}
-  .ptiles{margin:30px auto 0}
-  .ptile{flex:1 1 100%;margin:0 8px 16px}
-  .rcta{margin-top:30px}
-  .soc{gap:22px;margin-top:28px}
-  .lead{font-size:16.5px}
-  .note{margin-top:22px;padding:18px}
-}
+#heritage p{margin-left:auto;margin-right:auto;text-align:center}
+.note{text-align:center}
+.rcta{justify-content:center}
+.soc{justify-content:center}
+.icard,.pcard{text-align:center}
+.icard p,.pcard p{margin-left:auto;margin-right:auto}
+.phase{text-align:center}
+.ptile{text-align:center}
 </style>
 </head>
 <body>
@@ -260,13 +275,15 @@ footer b{color:#fff}
   </div>
 </div>
 
+
+
 <!-- INDUSTRIES -->
 <section id="industries">
   <div class="wrap">
     <span class="kicker">Choose your path</span>
     <h2>Sign up for the industry you want to lead in</h2>
-    <p class="lead" style="margin-top:16px">Every pathway starts at entry level. Register your interest and we will match you to partners and opportunities as they open.</p>
-    <p style="margin-top:18px;font-size:15.5px;color:var(--slate);text-align:center"><strong style="color:var(--coral)">New:</strong> our Law pathway is delivered in collaboration with BPP StreetLaw, commencing January 2027. Ask us about applications.</p>
+    <p class="lead" style="margin-top:16px">Every pathway starts at entry level. For now, each industry offer covers CV building and interview skills, with roles added as they come up. Register your interest and we will match you to partners and opportunities as they open.</p>
+    <p style="margin-top:18px;font-size:15.5px;color:var(--slate)"><strong style="color:var(--coral)">New:</strong> our Law pathway is delivered in collaboration with BPP StreetLaw, commencing January 2027. Applications are open.</p>
     <div class="icards">
       <div class="icard" style="--ac:var(--gold)"><div class="dot"></div><h3>Finance</h3><p>Banking, investment, accounting and fintech, from first role onwards.</p><a href="https://form.jotform.com/261318409656361" target="_blank">Register interest</a></div>
       <div class="icard" style="--ac:var(--coral)"><div class="dot"></div><h3>Law</h3><p>In collaboration with <strong>BPP StreetLaw</strong>, commencing January 2027.</p><a href="#contact">Ask about StreetLaw</a></div>
@@ -278,7 +295,6 @@ footer b{color:#fff}
     </div>
   </div>
 </section>
-
 <!-- PROGRAMMES -->
 <section id="programmes">
   <div class="wrap">
@@ -286,9 +302,9 @@ footer b{color:#fff}
     <h2>Opt in to the development you need</h2>
     <p class="lead" style="margin-top:16px">YCLN is the development layer. Every member can opt in to the programmes that fit their goals, before stepping through the doors our partners open.</p>
     <div class="pcards">
-      <div class="pcard"><h3>Skills Development Cohorts</h3><p>A six-week, cohort-based programme built with young people, for young people. Communication, professional skills, and the practical capabilities employers actually look for.</p><span class="opt">Open to all members</span><br><button class="btn btn-navy" onclick="openProg(0)" style="margin-top:16px">What's included</button></div>
-      <div class="pcard c2"><h3>Networking Skills Programme</h3><p>Networking is a skill, not a talent. Workshops that turn introductions into relationships, and relationships into opportunities.</p><span class="opt">Open to all members</span><br><button class="btn btn-navy" onclick="openProg(1)" style="margin-top:16px">What's included</button></div>
-      <div class="pcard c3"><h3>Coaching Programme</h3><p>Structured coaching that helps you set direction, build confidence, and take ownership of your career, whichever industry you choose.</p><span class="opt">Open to all members</span><br><button class="btn btn-navy" onclick="openProg(2)" style="margin-top:16px">What's included</button></div>
+      <div class="pcard"><h3>The Academy</h3><p>A six-week, cohort-based programme built with young people, for young people. Communication, professional skills, and the practical capabilities employers actually look for.</p><span class="opt">Open to all members</span><br><button class="btn btn-navy details-btn" onclick="openProg(0)" style="margin-top:16px">What's included</button></div>
+      <div class="pcard c2"><h3>The Circle</h3><p>Networking is a skill, not a talent. Workshops that turn introductions into relationships, and relationships into opportunities.</p><span class="opt">Open to all members</span><br><button class="btn btn-navy details-btn" onclick="openProg(1)" style="margin-top:16px">What's included</button></div>
+      <div class="pcard c3"><h3>The Compass</h3><p>Structured coaching that helps you set direction, build confidence, and take ownership of your career, whichever industry you choose.</p><span class="opt">Open to all members</span><br><button class="btn btn-navy details-btn" onclick="openProg(2)" style="margin-top:16px">What's included</button></div>
     </div>
     <div class="note"><strong style="color:var(--navy)">Grow with us:</strong> members and volunteers can also train as virtual workshop facilitators and work towards accreditation in coaching and mentoring, recognised credentials that strengthen any CV.</div>
   </div>
@@ -335,9 +351,9 @@ footer b{color:#fff}
     <h2>Doors open across every industry</h2>
     <p class="lead" style="margin-top:16px">We develop young people. Our partners deliver the experience layer: placements, insight and industry access.</p>
     <div class="ptiles">
-      <div class="ptile"><img src="partner-bpp.png" alt="BPP University Law School" style="height:64px;margin-bottom:14px"><br><span class="t">Legal education partner</span><b>BPP Law</b><p>Home of the StreetLaw programme, commencing January 2027.</p></div>
-      <div class="ptile"><img src="partner-stumbl.png" alt="Stumbl" style="height:52px;margin:6px 0 20px"><br><span class="t">Legal industry partner</span><b>Stumbl</b><p>Supporting early-career exploration and discovery.</p></div>
-      <div class="ptile"><img src="partner-ebb.png" alt="Excel Beyond Barriers" style="height:84px;margin-bottom:0"><br><span class="t">Programme partner</span><b>Excel Beyond Barriers</b><p>Delivery partner for the RegenAct reverse mentoring programme.</p></div>
+      <div class="ptile" style="text-align:center"><img src="partner-bpp.png" alt="BPP University Law School" style="height:64px;margin-bottom:14px"><br><span class="t">Legal education partner</span><b>BPP Law</b><p>Home of the StreetLaw programme, commencing January 2027.</p></div>
+      <div class="ptile" style="text-align:center"><img src="partner-stumbl.png" alt="Stumbl" style="height:52px;margin:6px 0 20px"><br><span class="t">Legal industry partner</span><b>Stumbl</b><p>Supporting early-career exploration and discovery.</p></div>
+      <div class="ptile" style="text-align:center"><img src="partner-ebb.png" alt="Excel Beyond Barriers" style="height:84px;margin-bottom:0"><br><span class="t">Programme partner</span><b>Excel Beyond Barriers</b><p>Delivery partner for the RegenAct reverse mentoring programme.</p></div>
       <div class="ptile"><img src="partner-ps2g.png" alt="ParentSkills2Go" style="height:70px;margin:8px 0 14px"><br><span class="t">Career skills partner</span><b>ParentSkills2Go</b><p>Partner for career skills development workshops.</p></div>
     </div>
   </div>
@@ -377,6 +393,11 @@ footer b{color:#fff}
   <p><b>Young Community Leaders Network</b> | ycln.org.uk | A youth-led Community Interest Company</p>
 </footer>
 
+<script>
+function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open')}
+function closeMenu(){document.getElementById('mobileMenu').classList.remove('open')}
+</script>
+
 <div class="modal" id="progModal" onclick="if(event.target===this)closeProg()">
   <div class="modal-box">
     <button class="modal-close" onclick="closeProg()" aria-label="Close">&times;</button>
@@ -385,17 +406,15 @@ footer b{color:#fff}
     <div id="progBody"></div>
     <div class="modal-cta">
       <p id="progCtaText"></p>
-      <a class="btn btn-gold" href="https://form.jotform.com/261318409656361" target="_blank">Sign up via our application form</a>
+      <a class="btn btn-gold" id="progCtaBtn" href="https://form.jotform.com/261318409656361" target="_blank">Sign up via our application form</a>
     </div>
   </div>
 </div>
 
 <script>
-function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open')}
-function closeMenu(){document.getElementById('mobileMenu').classList.remove('open')}
 const PROGS=[
- {title:"Skills Development Cohorts",
-  sub:"Six weeks, two hours per week, plus independent practice. Open to all YCLN members aged 18 to 25.",
+ {title:"The Academy",
+  sub:"The Academy: six weeks, two hours per week, plus independent practice. Open to all YCLN members aged 18 to 25.",
   body:`<h4>What you will develop</h4><ul>
   <li><b>Week 1: Professional Communication.</b> Workplace speaking and writing, email etiquette, professional introductions.</li>
   <li><b>Week 2: Self-Management and Reliability.</b> Time management, keeping commitments, honest goal tracking.</li>
@@ -405,8 +424,8 @@ const PROGS=[
   <li><b>Week 6: Capstone and Next Steps.</b> Portfolio of evidence, personal development plan, pathways into partner opportunities.</li></ul>
   <h4>What you leave with</h4><ul><li>A portfolio of six assessed deliverables</li><li>A finished CV and mock interview scorecard</li><li>A signed twelve-month development plan</li><li>A YCLN Skills Certificate</li></ul>`,
   cta:"Ready to build the skills employers actually ask for?"},
- {title:"Networking Skills Programme",
-  sub:"Four two-hour sessions with real-world assignments between each. Open to all YCLN members aged 18 to 25.",
+ {title:"The Circle",
+  sub:"The Circle: four two-hour sessions with real-world assignments between each. Open to all YCLN members aged 18 to 25.",
   body:`<h4>What you will develop</h4><ul>
   <li><b>Session 1: Why Networks Beat Applications.</b> The hidden job market, mapping your existing network, the curiosity-first mindset.</li>
   <li><b>Session 2: The Conversation.</b> Your thirty-second story, small talk that is not small, reading a room, handling nerves.</li>
@@ -414,8 +433,8 @@ const PROGS=[
   <li><b>Session 4: Maintaining Relationships.</b> The follow-up habit, a simple relationship tracker, asking for help well, giving back.</li></ul>
   <h4>What you leave with</h4><ul><li>A mapped network of thirty contacts</li><li>Five active professional relationships</li><li>Two booked informational interviews</li><li>A written networking plan and observed live practice</li></ul>`,
   cta:"Your next opportunity is probably a conversation away. Start it here."},
- {title:"Coaching Programme",
-  sub:"Six one-to-one modules with a trained YCLN coach over twelve weeks. Open to all YCLN members aged 18 to 25.",
+ {title:"The Compass",
+  sub:"The Compass: six one-to-one modules with a trained YCLN coach over twelve weeks. Open to all YCLN members aged 18 to 25.",
   body:`<h4>What you will work through</h4><ul>
   <li><b>Module 1: Orientation and Contracting.</b> How coaching works, confidentiality, three goals drafted.</li>
   <li><b>Module 2: Knowing Yourself.</b> Values and strengths, the gap between where you are and where you want to be.</li>
@@ -439,7 +458,5 @@ function closeProg(){
   document.body.style.overflow='';
 }
 </script>
-
 </body>
 </html>
-
