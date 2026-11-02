@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -294,13 +293,14 @@ footer b{color:#fff}
     <p style="margin-top:18px;font-size:15.5px;color:var(--slate)"><strong style="color:var(--coral)">New:</strong> our Law pathway is delivered in collaboration with BPP StreetLaw, commencing January 2027. Applications are open.</p>
     <div class="icards">
       <div class="icard" style="--ac:var(--gold)"><div class="dot"></div><h3>Finance</h3><p>Banking, investment, accounting and fintech, from first role onwards.</p><a href="https://form.jotform.com/261318409656361" target="_blank">Register interest</a></div>
-      <div class="icard" style="--ac:var(--coral)"><div class="dot"></div><h3>Law</h3><p>In collaboration with <strong>BPP StreetLaw</strong>, commencing January 2027.</p><a href="#contact">Ask about StreetLaw</a></div>
+      <div class="icard" style="--ac:var(--coral)"><div class="dot"></div><h3>Law</h3><p>In collaboration with <strong>BPP StreetLaw</strong>, commencing January 2027.</p><a href="#" onclick="openStreetlaw();return false">Ask about StreetLaw</a></div>
       <div class="icard" style="--ac:var(--teal)"><div class="dot"></div><h3>AI and Technology</h3><p>Software, data, product and the AI economy.</p><a href="https://form.jotform.com/261318409656361" target="_blank">Register interest</a></div>
       <div class="icard" style="--ac:var(--purple-l)"><div class="dot"></div><h3>Real Estate</h3><p>Agency, surveying, development and property management.</p><a href="https://form.jotform.com/261318409656361" target="_blank">Register interest</a></div>
       <div class="icard" style="--ac:var(--navy)"><div class="dot"></div><h3>Architecture</h3><p>Design, planning and the built environment.</p><a href="https://form.jotform.com/261318409656361" target="_blank">Register interest</a></div>
       <div class="icard" style="--ac:var(--green)"><div class="dot"></div><h3>Sustainability</h3><p>Net zero, ESG and the growing green economy.</p><a href="https://form.jotform.com/261318409656361" target="_blank">Register interest</a></div>
       <div class="icard" style="--ac:#9AA3B2"><div class="dot"></div><h3>And More</h3><p>Media, healthcare, engineering and beyond. If it is a career, it is on our roadmap.</p><a href="https://form.jotform.com/261318409656361" target="_blank">Register interest</a></div>
     </div>
+
   </div>
 </section>
 <!-- PROGRAMMES -->
@@ -407,6 +407,27 @@ function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('op
 function closeMenu(){document.getElementById('mobileMenu').classList.remove('open')}
 </script>
 
+
+<div class="modal" id="streetlawModal" onclick="if(event.target===this)closeStreetlaw()">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeStreetlaw()" aria-label="Close">&times;</button>
+    <div style="font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#D63A4A;margin-bottom:6px">In partnership with BPP Law</div>
+    <h3 style="color:var(--navy);font-size:24px;margin-bottom:4px">BPP StreetLaw at YCLN</h3>
+    <div class="sub" style="color:var(--slate);font-size:14px;margin-bottom:18px">Commencing January 2027</div>
+    <p style="color:var(--ink);font-size:15px;margin-bottom:14px">StreetLaw is BPP University Law School's free legal education programme, delivered by trained postgraduate law students. Through YCLN, members aged 18 to 25 can access interactive workshops on the law that affects their lives, from employment rights and consumer law to social media and the law, plus sessions that map the real routes into the legal profession.</p>
+    <ul style="color:var(--ink);font-size:15px;margin:0 0 16px 20px">
+      <li style="margin-bottom:7px">45 to 90 minute workshops, free of charge, in person in London, Birmingham, Manchester and Leeds, or online anywhere</li>
+      <li style="margin-bottom:7px">Workshops cover your rights at work, redundancy, renting, avoiding scams, online behaviour and the law, and how to get into law with or without a degree</li>
+      <li style="margin-bottom:7px">Delivered by award-winning BPP student volunteers, overseen by qualified lawyers</li>
+      <li>General legal education and signposting only, never personal legal advice</li>
+    </ul>
+    <div class="modal-cta">
+      <p style="color:var(--slate);font-size:14.5px;margin-bottom:16px">Register your interest through YCLN and we will coordinate your place with the BPP StreetLaw team.</p>
+      <a class="btn btn-gold" href="https://form.jotform.com/261318409656361" target="_blank">Register interest via our form</a>
+    </div>
+  </div>
+</div>
+
 <div class="modal" id="progModal" onclick="if(event.target===this)closeProg()">
   <div class="modal-box">
     <button class="modal-close" onclick="closeProg()" aria-label="Close">&times;</button>
@@ -461,6 +482,14 @@ function openProg(i){
   document.getElementById('progCtaText').textContent=PROGS[i].cta;
   document.getElementById('progModal').style.display='block';
   document.body.style.overflow='hidden';
+}
+function openStreetlaw(){
+  document.getElementById('streetlawModal').style.display='block';
+  document.body.style.overflow='hidden';
+}
+function closeStreetlaw(){
+  document.getElementById('streetlawModal').style.display='none';
+  document.body.style.overflow='';
 }
 function closeProg(){
   document.getElementById('progModal').style.display='none';
