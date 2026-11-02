@@ -219,6 +219,25 @@ footer b{color:#fff}
 .pcards{align-items:stretch}
 .pcard{display:flex;flex-direction:column}
 .pcard button{margin-top:auto}
+
+/* RegenAct section design */
+#regenact .ra-hero{font-family:'Playfair Display',serif;font-size:clamp(40px,5.5vw,60px);font-weight:700;color:#fff}
+#regenact .ra-tag{margin-top:16px;font-weight:700;font-size:clamp(20px,3.2vw,32px);color:#fff;line-height:1.4}
+#regenact .ra-tag em{font-style:normal;color:var(--gold)}
+#regenact .ra-sub{margin-top:12px;font-family:'Playfair Display',serif;font-style:italic;color:#C9D3DE;font-size:16.5px}
+#regenact .ra-blurb{max-width:720px;margin:26px auto 0;color:#BECAD6}
+#regenact .ra-photos{display:flex;gap:14px;margin:40px -7px 0;flex-wrap:wrap}
+#regenact .ra-photos div{flex:1 1 200px;min-width:180px;margin:0 7px;border-radius:10px;overflow:hidden}
+#regenact .ra-photos img{width:100%;height:200px;object-fit:cover;display:block}
+#regenact .ra-vs{display:flex;flex-wrap:wrap;gap:18px;margin:40px -9px 0}
+#regenact .ra-card{flex:1 1 280px;min-width:260px;margin:0 9px;border-radius:10px;padding:28px}
+#regenact .ra-card.grey{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);opacity:.8}
+#regenact .ra-card.gold{background:rgba(246,183,28,.07);border:1px solid rgba(246,183,28,.4)}
+#regenact .ra-card .lbl{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin-bottom:12px}
+#regenact .ra-card.grey .lbl{color:#8FA0B3}
+#regenact .ra-card.gold .lbl{color:var(--gold)}
+#regenact .ra-card p{color:#C9D3DE;font-size:15px;margin:0}
+#regenact .ra-card.gold p{color:#fff}
 </style>
 </head>
 <body>
@@ -292,13 +311,15 @@ footer b{color:#fff}
     <p class="lead" style="margin-top:16px">Every pathway starts at entry level. For now, each industry offer covers CV building and interview skills, with roles added as they come up. Register your interest and we will match you to partners and opportunities as they open.</p>
     <p style="margin-top:18px;font-size:15.5px;color:var(--slate)"><strong style="color:var(--coral)">New:</strong> our Law pathway is delivered in collaboration with BPP StreetLaw, commencing January 2027. Applications are open.</p>
     <div class="icards">
-      <div class="icard" style="--ac:var(--gold)"><div class="dot"></div><h3>Finance</h3><p>Banking, investment, accounting and fintech, from first role onwards.</p><a href="https://form.jotform.com/261318409656361" target="_blank">Register interest</a></div>
+      <div class="icard" style="--ac:var(--gold)"><div class="dot"></div><h3>Finance</h3><p>Banking, investment, accounting and fintech, from first role onwards.</p></div>
       <div class="icard" style="--ac:var(--coral)"><div class="dot"></div><h3>Law</h3><p>In collaboration with <strong>BPP StreetLaw</strong>, commencing January 2027.</p><a href="#" onclick="openStreetlaw();return false">Ask about StreetLaw</a></div>
-      <div class="icard" style="--ac:var(--teal)"><div class="dot"></div><h3>AI and Technology</h3><p>Software, data, product and the AI economy.</p><a href="https://form.jotform.com/261318409656361" target="_blank">Register interest</a></div>
-      <div class="icard" style="--ac:var(--purple-l)"><div class="dot"></div><h3>Real Estate</h3><p>Agency, surveying, development and property management.</p><a href="https://form.jotform.com/261318409656361" target="_blank">Register interest</a></div>
-      <div class="icard" style="--ac:var(--navy)"><div class="dot"></div><h3>Architecture</h3><p>Design, planning and the built environment.</p><a href="https://form.jotform.com/261318409656361" target="_blank">Register interest</a></div>
-      <div class="icard" style="--ac:var(--green)"><div class="dot"></div><h3>Sustainability</h3><p>Net zero, ESG and the growing green economy.</p><a href="https://form.jotform.com/261318409656361" target="_blank">Register interest</a></div>
-      <div class="icard" style="--ac:#9AA3B2"><div class="dot"></div><h3>And More</h3><p>Media, healthcare, engineering and beyond. If it is a career, it is on our roadmap.</p><a href="https://form.jotform.com/261318409656361" target="_blank">Register interest</a></div>
+      <div class="icard" style="--ac:var(--teal)"><div class="dot"></div><h3>AI and Technology</h3><p>Software, data, product and the AI economy.</p></div>
+      <div class="icard" style="--ac:var(--purple-l)"><div class="dot"></div><h3>Real Estate</h3><p>Agency, surveying, development and property management.</p><a href="#regenact">Ask about RegenAct</a></div>
+      <div class="icard" style="--ac:var(--navy)"><div class="dot"></div><h3>Architecture</h3><p>Design, planning and the built environment.</p></div>
+      <div class="icard" style="--ac:var(--green)"><div class="dot"></div><h3>Sustainability</h3><p>Net zero, ESG and the growing green economy.</p><a href="#regenact">Ask about RegenAct</a></div>
+      <div class="icard" style="--ac:#9AA3B2"><div class="dot"></div><h3>And More</h3><p>Media, healthcare, engineering and beyond. If it is a career, it is on our roadmap.</p></div>
+    </div>
+    <div style="text-align:center;margin-top:36px"><a class="btn btn-navy" href="https://form.jotform.com/261318409656361" target="_blank">Register interest</a></div>
     </div>
 
   </div>
@@ -322,32 +343,59 @@ footer b{color:#fff}
 <section id="regenact">
   <div class="wrap">
     <span class="kicker">Our flagship programme</span>
-    <h2>RegenAct: Reverse Mentoring</h2>
-    <p class="lead" style="margin-top:16px">Our flagship programme flips traditional mentoring on its head. Young adults aged 18 to 25 mentor senior professionals leading regeneration projects. Your lived experience is the expertise. Community intelligence flows upward into the decisions that shape where you live. You are not a participant. You are a leader.</p>
+    <h2 class="ra-hero" style="text-align:center">RegenAct</h2>
+    <p class="ra-tag" style="text-align:center">Your Voice. <em>Your Community.</em> Your Leadership Journey.</p>
+    <p class="ra-sub" style="text-align:center">Become a Reverse Mentor.<br>You're not just a Participant, You are a Leader.</p>
+
+    <p class="lead ra-blurb" style="text-align:center">Regeneration was supposed to improve places. Across London it is doing something else: towers go up that the people who lived there could never afford, and communities, most of them poorer and most of them Black and minority ethnic, are pushed out of the areas they built. The decisions are made by people who will never live with the consequences.</p>
+    <p class="lead ra-blurb" style="text-align:center;margin-top:16px">RegenAct turns that around. You are the young person from that community. The senior professional leading the project is your mentee. For twelve weeks they meet you every week, and you teach them what their plans miss: what is working, what is missing, and what happens on your streets after their site visits end.</p>
+
+    <div class="ra-photos">
+      <div><img src="regenact-photo-5.png" alt="A young person and a professional talking on an estate"></div>
+      <div><img src="regenact-photo-8.png" alt="A young mentor walking and talking with a senior professional"></div>
+      <div><img src="regenact-photo-11.png" alt="Young people celebrating together"></div>
+    </div>
+
+    <div class="ra-vs">
+      <div class="ra-card grey">
+        <div class="lbl">Standard consultation</div>
+        <p>A consultant runs a two-hour session, ticks a box, and writes the report. You find out what was decided when the hoardings go up.</p>
+      </div>
+      <div class="ra-card gold">
+        <div class="lbl">Reverse mentoring</div>
+        <p>For twelve weeks the same senior professional meets you every week. You set the agenda. What you know goes into their design decisions, their business case, and their board papers.</p>
+      </div>
+    </div>
+
     <div class="facts">
-      <div class="fact"><b>16 weeks</b><span>32 hours per participant</span></div>
-      <div class="fact"><b>16</b><span>audit-ready deliverables</span></div>
-      <div class="fact"><b>Free</b><span>£3,000 programme value</span></div>
-      <div class="fact"><b>£25,620</b><span>net social value per cohort</span></div>
-      <div class="fact"><b>Certified</b><span>RegenAct Community Mentor Certificate</span></div>
+      <div class="fact"><b>Free</b><span>worth £3,000 per place, no cost to you</span></div>
+      <div class="fact"><b>12 weeks</b><span>one hour a week together, plus your own time</span></div>
+      <div class="fact"><b>You mentor</b><span>paired with a senior decision-maker in the built environment</span></div>
+      <div class="fact"><b>Certified</b><span>certificate, LinkedIn recommendation, alumni network</span></div>
     </div>
+
+    <h3 style="color:#fff;font-size:21px;margin:52px 0 6px;text-align:center">The twelve weeks</h3>
+    <p style="color:#BECAD6;text-align:center;max-width:600px;margin:0 auto 28px;font-size:15px">Four phases. Each one ends with something you have produced that the project has to take seriously.</p>
     <div class="phases">
-      <div class="phase"><span class="w">Weeks 1 to 4</span><h3>Foundations</h3><p>Establishing the mentoring relationship, storytelling as intelligence, asset mapping, and identifying hidden issues.</p></div>
-      <div class="phase"><span class="w">Weeks 5 to 9</span><h3>Discovery</h3><p>Site observation, stakeholder mapping, trust audits, community aspirations, and design input.</p></div>
-      <div class="phase"><span class="w">Weeks 10 to 13</span><h3>Application</h3><p>Business case development, opposition navigation, feasibility, and sustaining engagement.</p></div>
-      <div class="phase"><span class="w">Weeks 14 to 16</span><h3>Impact</h3><p>Insight synthesis, stakeholder presentation, delivery, and celebration. You present to decision-makers.</p></div>
+      <div class="phase"><span class="w">Weeks 1 to 3</span><h3>Foundations</h3><p>You set the ground rules, tell your story, map what your community actually has, and flag the issues nobody has written down yet.</p></div>
+      <div class="phase"><span class="w">Weeks 4 to 6</span><h3>Discovery</h3><p>You walk them through your area at your hours, not theirs. You show them who really holds power, and audit the promises made last time.</p></div>
+      <div class="phase"><span class="w">Weeks 7 to 10</span><h3>Application</h3><p>You turn what you know into the language projects answer to: social value, Section 106, the business case for listening.</p></div>
+      <div class="phase"><span class="w">Weeks 11 to 12</span><h3>Impact</h3><p>You write the report together and present it to the people who sign it off. Then you celebrate, properly.</p></div>
     </div>
+
     <div class="comps">
       <span>Active Listening</span><span>Powerful Questioning</span><span>Receiving Guidance</span><span>Building Trust</span><span>Bias Awareness</span><span>Decision-Making</span>
     </div>
+
     <div class="rcta">
       <a class="btn btn-gold" href="https://form.jotform.com/261318409656361" target="_blank">Register for RegenAct</a>
       <a class="btn btn-ghost" href="https://form.jotform.com/261332580140042" target="_blank">Partner with RegenAct</a>
     </div>
+
     <div class="soc">
-      <div><b>82%</b><span>less community opposition when engagement is meaningful</span></div>
-      <div><b>87%</b><span>of junior mentors report significantly expanded professional networks</span></div>
-      <div><b>3x</b><span>increase in community trust when leaders listen to young voices</span></div>
+      <div><b>82%</b><span>less opposition when communities are engaged early and properly</span></div>
+      <div><b>87%</b><span>of junior mentors say their professional network grew significantly</span></div>
+      <div><b>£25,620</b><span>net social value generated per cohort</span></div>
     </div>
   </div>
 </section>
