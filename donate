@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donate - YCLN Young Community Leaders Network</title>
+<meta name="description" content="Donate to YCLN and fund skills, networks and coaching for 18 to 25 year olds, especially those not in education, employment or training.">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Archivo+Black&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1D2554; --deep:#141A3C; --ink:#111111;
+  --gold:#F6B71C; --gold-d:#E8A715;
+  --coral:#FC6B75; --teal:#07AEBE; --purple:#74258E; --purple-l:#8E44AD; --green:#52A45A;
+  --paper:#FBFAF8; --white:#ffffff; --slate:#5E6C7A; --line:#E7E4DE;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Source Sans 3',Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.7;overflow-x:hidden}
+.wrap{max-width:860px;margin:0 auto;padding:0 24px}
+h1{font-size:clamp(30px,5vw,48px);font-weight:700;line-height:1.15}
+h2{color:var(--navy);font-size:clamp(24px,3.4vw,32px);margin:56px 0 18px}
+p{margin-bottom:18px;font-size:17px}
+strong{color:var(--navy)}
+
+header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px;max-width:1100px;margin:0 auto;padding:0 26px}
+.brand img{height:40px;width:auto}
+.nav a.back{color:var(--navy);font-weight:700;text-decoration:none;font-size:15px}
+.nav a.back:hover{color:var(--purple)}
+
+.hero{background:var(--deep);color:#fff;position:relative;text-align:center;padding:96px 24px 84px;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.10) 1.6px,transparent 1.7px);background-size:26px 26px;mask-image:linear-gradient(120deg,rgba(0,0,0,.8),rgba(0,0,0,.1))}
+.hero .wrap{position:relative;z-index:2}
+.hero .k{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--teal);margin-bottom:16px}
+.hero p{color:#D5DDE7;max-width:640px;margin:22px auto 0;font-size:18px}
+
+.main{padding:64px 24px 80px}
+.lede{font-size:19px;color:var(--slate)}
+.stats{display:flex;flex-wrap:wrap;gap:20px;margin:34px 0 10px}
+.stat{flex:1 1 200px;background:#fff;border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:10px;padding:22px}
+.stat b{display:block;font-size:30px;color:var(--navy)}
+.stat span{font-size:14px;color:var(--slate)}
+
+.tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin-top:28px}
+.tier{background:#fff;border:1px solid var(--line);border-radius:12px;padding:26px}
+.tier .amt{font-family:'Archivo Black',Arial,sans-serif;font-size:26px;color:var(--navy)}
+.tier h3{font-size:16px;color:var(--navy);margin:8px 0 6px}
+.tier p{font-size:14.5px;color:var(--slate);margin:0}
+
+.donatebox{background:#fff;border:1px solid var(--line);border-radius:14px;padding:40px 34px;margin-top:56px;text-align:center}
+.donatebox h2{margin-top:0}
+.donatebox .placeholder{border:2px dashed #C8BFAE;border-radius:10px;padding:36px 24px;color:var(--slate);font-size:15px;background:#FDFCFA;margin-top:22px;text-align:left}
+.donatebox .placeholder code{background:#F0EEE9;padding:2px 7px;border-radius:5px;font-size:13.5px;color:var(--navy)}
+
+.large{margin-top:56px;padding:28px 30px;background:rgba(29,37,84,.06);border-left:5px solid var(--navy);border-radius:0 10px 10px 0}
+.large p{margin:0;font-size:15.5px}
+
+footer{background:#0D1230;color:#8FA0B3;text-align:center;padding:32px 18px;font-size:14px}
+footer b{color:#fff}
+footer a{color:var(--gold);text-decoration:none}
+
+@media(max-width:640px){
+  .hero{padding:64px 18px 56px}
+  .main{padding:44px 18px 60px}
+  .donatebox{padding:28px 20px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="index.html"><img src="ycln_logo.png" alt="YCLN"></a>
+    <a class="back" href="index.html">&larr; Back to site</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="k">Support YCLN</div>
+    <h1>Talent is everywhere.<br>Opportunity is not.</h1>
+    <p>Young Community Leaders Network equips 18 to 25 year olds, especially those not in education, employment or training, with the skills, networks and coaching to lead across law, finance, technology, property and beyond. Our future depends on your support.</p>
+  </div>
+</section>
+
+<div class="main">
+  <div class="wrap">
+
+    <p class="lede">Over 200 young people helped design YCLN. They told us the same thing in every session: they have the talent, they lack the networks. Your donation funds the workshops, coaching and accredited training that close that gap, and opens doors with partners like BPP Law, Stumbl and Excel Beyond Barriers.</p>
+
+    <div class="stats">
+      <div class="stat"><b>18 to 25</b><span>the young people we serve, with a focus on those not in education, employment or training</span></div>
+      <div class="stat"><b>200+</b><span>young people involved in designing our programmes</span></div>
+      <div class="stat"><b>Youth-led</b><span>a Community Interest Company run by the people it serves</span></div>
+    </div>
+
+    <h2>What your donation funds</h2>
+    <div class="tiers">
+      <div class="tier"><div class="amt">£25</div><h3>A workshop place</h3><p>One young person through a full session of The Academy or The Circle, with materials and facilitator time covered.</p></div>
+      <div class="tier"><div class="amt">£75</div><h3>A coaching month</h3><p>Four weeks of one-to-one coaching through The Compass, including the participant's development plan.</p></div>
+      <div class="tier"><div class="amt">£250</div><h3>A coaching journey</h3><p>The full twelve-week Compass programme for one young person, from contracting to next steps.</p></div>
+      <div class="tier"><div class="amt">£1,500</div><h3>A cohort place on RegenAct</h3><p>One young adult through our sixteen-week reverse mentoring flagship, ending with certification and an alumni network seat.</p></div>
+    </div>
+
+    <div class="donatebox">
+      <h2>Donate today</h2>
+      <p>Every contribution goes directly to programme delivery. YCLN is a Community Interest Company: surpluses are reinvested, never distributed.</p>
+
+      <!-- ============================================================
+           DONORBOX EMBED GOES HERE
+           1. Log in at donorbox.org, open your campaign
+           2. Campaign settings, copy the EMBED CODE
+           3. Replace this entire placeholder div with that code
+           ============================================================ -->
+      <div class="placeholder">
+        <strong>Donorbox form will appear here.</strong><br><br>
+        Once your Donorbox campaign is live, copy its embed code and paste it in this file (<code>donate.html</code>) in place of this box. The form will then render directly on this page, branded to YCLN.
+      </div>
+    </div>
+
+    <div class="large">
+      <p><strong>For donations over £2,500, or to discuss strategic partnerships and sponsorship,</strong> please email <a href="mailto:info@ycln.org.uk" style="color:var(--navy);font-weight:700">info@ycln.org.uk</a> and we will respond within two working days.</p>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <p><b>Young Community Leaders Network</b> | ycln.org.uk | A youth-led Community Interest Company</p>
+  <p style="margin-top:8px"><a href="index.html">Back to the main site</a></p>
+</footer>
+
+</body>
+</html>
